@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("booking.jpg"); /* Add background image */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8); /* Add transparency to the form */
+            padding: 20px;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        input[type="date"], 
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Added for proper box sizing */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="country">Your Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="adult">Adult:</label>
+        <input type="text" id="adult" name="adult" required>
+
+        <label for="child">Child:</label>
+        <input type="text" id="child" name="child" required>
+
+        <label for="arrival">Arrival Date:</label>
+        <input type="date" id="arrival" name="arrival" required>
+
+        <label for="departure">Departure Date:</label>
+        <input type="date" id="departure" name="departure" required>
+
+        <label for="description">Your Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <button type="submit">Confirm</button>
+    </form>
+</div>
+
+</body>
+</html>
