@@ -255,22 +255,19 @@
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Thailand</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Dambulla</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Malaysia</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Temple of Tooth</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Australia</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Sigiriya</div>
                             </a>
                         </div>
                     </div>
@@ -278,8 +275,7 @@
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/destination-4.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Indonesia</div>
+                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Anuradhapura</div>
                     </a>
                 </div>
             </div>
@@ -397,64 +393,64 @@
                     </div>
                     <div class="col-md-6">
                         <h1 class="text-white mb-4">Book A Tour</h1>
-                        <form>
+                        <form action="send_email.php" method="post">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control bg-transparent" id="name" name="name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control bg-transparent" id="email" name="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="country" placeholder="Your Country">
+                                        <input type="text" class="form-control bg-transparent" id="country" name="country" placeholder="Your Country" required>
                                         <label for="country">Your Country</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select bg-transparent" id="select1">
+                                        <select class="form-select bg-transparent" id="package" name="package" required>
                                             <option value="1">Heritage of the Island</option>
                                             <option value="2">Island Odyssey</option>
                                             <option value="3">Nature paradise</option>
                                         </select>
-                                        <label for="select1">Packages</label>
+                                        <label for="package">Packages</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="Adults" placeholder="Adults">
+                                        <input type="text" class="form-control bg-transparent" id="Adults" name="Adults" placeholder="Adults" required>
                                         <label for="Adults">Adults</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="childs" placeholder="childs">
-                                        <label for="childs">childs</label>
+                                        <input type="text" class="form-control bg-transparent" id="childs" name="childs" placeholder="Children" required>
+                                        <label for="childs">Children</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="Adatetime" placeholder="Arrival date & time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Arrival date & time</label>
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="Adatetime" name="Adatetime" placeholder="Arrival date & time" data-target="#date3" data-toggle="datetimepicker" required />
+                                        <label for="Adatetime">Arrival date & time</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="Ddatetime" placeholder="daparture date & time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Daparture date & time</label>
+                                    <div class="form-floating date" id="date4" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="Ddatetime" name="Ddatetime" placeholder="Departure date & time" data-target="#date4" data-toggle="datetimepicker" required />
+                                        <label for="Ddatetime">Departure date & time</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Discription</label>
+                                        <textarea class="form-control bg-transparent" id="message" name="message" placeholder="Special Request" style="height: 100px" required></textarea>
+                                        <label for="message">Description</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -462,6 +458,7 @@
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
